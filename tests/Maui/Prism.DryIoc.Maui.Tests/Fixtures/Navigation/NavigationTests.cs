@@ -149,6 +149,42 @@ public class NavigationTests : TestBase
         TestPage(currentPage);
     }
 
+    [Fact]
+    public async Task FlyoutRelativeNavigationWithSharedPage_RemovesPage_AndNavigates()
+    {
+        var mauiApp = CreateBuilder(prism => prism.OnAppStart("MockHome/NavigationPage/Shared1"))
+            .Build();
+        var window = GetWindow(mauiApp);
+
+        var rootPage = window.Page as MockHome;
+        Assert.NotNull(rootPage);
+        TestPage(rootPage);
+        Assert.NotNull(rootPage.Detail);
+        var detailPage = rootPage.Detail as NavigationPage;
+        Assert.NotNull(detailPage);
+        TestPage(detailPage);
+        var firstPage = detailPage.CurrentPage;
+        Assert.IsType<MockViewShared>(firstPage);
+        TestPage(firstPage);
+        Assert.IsType<MockViewShared1ViewModel>(firstPage.BindingContext);
+        var navService = Prism.Navigation.Xaml.Navigation.GetNavigationService(rootPage);
+        var result = await navService.NavigateAsync("./NavigationPage/Shared2");
+        Assert.True(result.Success);
+        Assert.NotNull(rootPage.Detail);
+        detailPage = rootPage.Detail as NavigationPage;
+        Assert.NotNull(detailPage);
+        TestPage(detailPage);
+        var secondPage = detailPage.CurrentPage;
+        Assert.IsType<MockViewShared>(secondPage);
+        TestPage(secondPage);
+
+        // this fails: expected type is MockViewShared2ViewModel, but actual type is MockViewShared1ViewModel
+        Assert.IsType<MockViewShared2ViewModel>(secondPage.BindingContext);
+
+        // this fails too. not sure if the page should be reused in this case. at least the BindingContext must be updated.
+        Assert.NotSame(secondPage, firstPage);
+    }
+
     [Fact(Skip = "Blocked by dotnet/maui/issues/8157")]
     public async Task RelativeNavigation_RemovesPage_AndNavigatesModally()
     {
