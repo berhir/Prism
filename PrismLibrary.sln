@@ -99,7 +99,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.Maui.Tests", "tests\M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.DryIoc.Maui.Tests", "tests\Maui\Prism.DryIoc.Maui.Tests\Prism.DryIoc.Maui.Tests.csproj", "{8711D306-1118-4A11-9399-EF14AA13015E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Events", "src\Prism.Events\Prism.Events.csproj", "{8610485A-BE9F-4938-86D4-E9F1FA1739A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.Events", "src\Prism.Events\Prism.Events.csproj", "{8610485A-BE9F-4938-86D4-E9F1FA1739A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismFlyoutCanNavigate", "PrismFlyoutCanNavigate\PrismFlyoutCanNavigate.csproj", "{A2FC9D9A-B575-4C96-A513-917E1089162E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -435,6 +437,24 @@ Global
 		{8610485A-BE9F-4938-86D4-E9F1FA1739A0}.Release|x64.Build.0 = Release|Any CPU
 		{8610485A-BE9F-4938-86D4-E9F1FA1739A0}.Release|x86.ActiveCfg = Release|Any CPU
 		{8610485A-BE9F-4938-86D4-E9F1FA1739A0}.Release|x86.Build.0 = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|x64.Build.0 = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|x86.Build.0 = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|x64.ActiveCfg = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|x64.Build.0 = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|x64.Deploy.0 = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|x86.ActiveCfg = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|x86.Build.0 = Release|Any CPU
+		{A2FC9D9A-B575-4C96-A513-917E1089162E}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

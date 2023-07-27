@@ -2,6 +2,7 @@
   "solution": {
     "path": "PrismLibrary.sln",
     "projects": [
+      "PrismFlyoutCanNavigate\\PrismFlyoutCanNavigate.csproj",
       "src\\Containers\\Prism.DryIoc.Shared\\Prism.DryIoc.Shared.shproj",
       "src\\Maui\\Prism.DryIoc.Maui\\Prism.DryIoc.Maui.csproj",
       "src\\Maui\\Prism.Maui.Rx\\Prism.Maui.Rx.csproj",

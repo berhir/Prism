@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:PrismFlyoutCanNavigate"
+  x:Class="PrismFlyoutCanNavigate.MainPage"
+  x:DataType="local:MainViewModel">
+
+  <FlyoutPage.Flyout>
+    <ContentPage
+      IconImageSource="hamburger.png"
+      Title="MainPageFlyout">
+      <Label
+        Text="Demo" />
+    </ContentPage>
+  </FlyoutPage.Flyout>
+
+</FlyoutPage>
